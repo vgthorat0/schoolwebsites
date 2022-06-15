@@ -1,0 +1,126 @@
+﻿
+@{
+    Layout = null;
+}
+<div class="full-widht menu-bg">
+    <div class="container full-widht footer-download">
+        <div class="row">
+            <div class="text-right col-6 col-md-6 col-sm-6 col-lg-6 border-left-2">
+                माहिती पत्रक डाउनलोड करा
+            </div>
+            <div class="text-left col-6 col-md-6 col-sm-6 col-lg-6">
+                संपर्क साधा
+            </div>
+            <div class="text-right col-6 col-md-6 col-sm-6 col-lg-6 padding-10">
+                <a href="#" class="btn btn-danger">Download</a>
+            </div>
+            <div class="text-left col-6 col-md-6 col-sm-6 col-lg-6 padding-10">
+                <a href="/home/contact" class="btn btn-success">संपर्क साधा</a>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        &nbsp;
+    </div>
+</div>
+
+<footer class="full-widht">
+    <div class="container">
+        <div class="row">
+
+            <div class="col-12 col-md-3 col-lg-3 col-sm-12">
+                <h3 class="footer-title">
+                    महत्वाच्या लिंक्स
+                </h3>
+                <ul class="footer-nav">
+                    <li>
+                        @Html.ActionLink("उद्दिष्टे", "Objective", "About", new { area = "" }, htmlAttributes: new { @class = "footer-link " })
+                    </li>
+                    <li>
+                        @Html.ActionLink("मुख्याध्यापक कक्ष", "PrincipalsDesk", "About", new { area = "" }, htmlAttributes: new { @class = "footer-link" })
+                    </li>
+                    <li>
+                        @Html.ActionLink("संचालक मंडळ", "DirectorBody", "About", new { area = "" }, htmlAttributes: new { @class = "footer-link" })
+                    </li>
+                    <li>
+                        @Html.ActionLink("शिक्षक व कर्मचारी", "Staff", "About", new { area = "" }, htmlAttributes: new { @class = "footer-link" })
+                    </li>
+                    
+                    <li>
+                        <a href="#">विविध उपक्रम</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3 col-lg-3 col-sm-12 ">
+                <h3 class="footer-title">
+                    महत्वाच्या लिंक्स
+                </h3>
+                <ul class="footer-nav">
+                    <li>
+                        @Html.ActionLink("चित्रे", "Gallery", "Home", new { area = "" }, htmlAttributes: new { @class = "footer-link" })
+                    </li>
+                    <li>
+                        @Html.ActionLink("विविध उपक्रम", "Events", "Home", new { area = "" }, htmlAttributes: new { @class = "footer-link" })
+                    </li>
+                </ul>
+            </div>
+            <div class="col-12 col-md-3 col-lg-3 col-sm-12 ">
+                <h3 class="footer-title">
+                    संपर्क
+                </h3>
+                <table class="">
+                    <tr class="footer-border-bottom footer-contact-text">
+                        <td>
+                            <img src="\img\footericoncall24x24.PNG">
+                        </td>
+                        <td>
+                            <span class="footer-links"><a class="footer-links" href="tel:@Websitedata.phone">@Websitedata.phone1marathi</a></span>
+                        </td>
+                    </tr>
+                    <tr class="footer-border-bottom footer-contact-text">
+                        <td>
+                            <img src="\img\footericonmsg24x24.PNG">
+                        </td>
+                        <td>
+                            <span style="word-break: break-all;"> <a class="footer-links" href="mailto:@Websitedata.email">@Websitedata.email</a> </span>
+                        </td>
+                    </tr>
+                    <tr class="footer-border-bottom footer-contact-text">
+                        <td>
+                            <img src="\img\footericonnav24x24.PNG">
+                        </td>
+                        <td>
+                            <span>
+                                @Websitedata.address
+                            </span>
+                        </td>
+                    </tr>
+                </table>
+            </div>
+            <div class="col-12 col-md-3 col-lg-3 col-sm-12 ">
+                <h3 class="footer-title">
+                    Visitors
+                </h3>
+                <div class="counter-container">
+                    <span>
+                        Visitors
+                        <span id="counter-vc"></span>
+                    </span>
+                </div>
+                <div class="counter-container">
+                    <span>
+                        Onlie Users
+                        <span id="counter-ouc"> </span>
+                    </span>
+                </div>
+                <div class="counter-container">
+
+                    <!-- <img src="https://smallseotools.com/counterDisplay?code=289de20af9b9546a2d137dd9329849ef&style=009&pad=5&type=page&initCount=10" title="Visitor Hit Counter" Alt="nesk" border="0"> -->
+                </div>
+
+            </div>
+        </div>
+    </div>
+</footer>

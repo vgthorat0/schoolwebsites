@@ -1,0 +1,76 @@
+﻿
+@{
+    Layout = null;
+}
+<!-- menu start -->
+<div class="full-widht menu-bg">
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light navbar-custom menu-bg">
+
+            <button class="navbar-toggler navbar-toggler-custom" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse " id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item active">
+                        @Html.ActionLink("मुखपृष्ठ", "Index", "Home", new { area = "" }, htmlAttributes: new { @class = "nav-link" })
+                        @*<a class="nav-link" href="#">
+                                मुखपृष्ठ
+                                <span class="sr-only">(current)</span>
+                            </a>*@
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">शाळेबद्दल </a>
+                        <div class="dropdown-menu dropdown-custom" aria-labelledby="navbarDropdown">
+                            @Html.ActionLink("उद्दिष्टे", "Objective", "About", new { area = "" }, htmlAttributes: new { @class = "nav-link dropdown-item" })
+                            @Html.ActionLink("मुख्याध्यापक कक्ष", "PrincipalsDesk", "About", new { area = "" }, htmlAttributes: new { @class = "nav-link dropdown-item" })
+                            @Html.ActionLink("संचालक मंडळ", "DirectorBody", "About", new { area = "" }, htmlAttributes: new { @class = "nav-link dropdown-item" })
+                            @*@Html.ActionLink("शालेय समिती", "SchoolCommittee", "About", new { area = "" }, htmlAttributes: new { @class = "nav-link dropdown-item" })*@
+                            @Html.ActionLink("शिक्षक व कर्मचारी", "Staff", "About", new { area = "" }, htmlAttributes: new { @class = "nav-link dropdown-item" })
+                            @Html.ActionLink("वैशिष्ट्ये", "Features", "About", new { area = "" }, htmlAttributes: new { @class = "nav-link dropdown-item" })
+                            @Html.ActionLink("नियम व सूचना", "Rules", "About", new { area = "" }, htmlAttributes: new { @class = "nav-link dropdown-item" })
+                        </div>
+                    </li>
+                    @*<li class="nav-item">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">विभाग</a>
+                        <div class="dropdown-menu dropdown-custom" aria-labelledby="navbarDropdown">
+                            @Html.ActionLink("सांस्कृतिक", "Cultural", "Departments", new { area = "" }, htmlAttributes: new { @class = "nav-link dropdown-item" })
+                            @Html.ActionLink("परीक्षा", "Exam", "Departments", new { area = "" }, htmlAttributes: new { @class = "nav-link dropdown-item" })
+                            @Html.ActionLink("क्रीडा", "Sports", "Departments", new { area = "" }, htmlAttributes: new { @class = "nav-link dropdown-item" })
+                            @Html.ActionLink("शैक्षणिक सहल", "SchoolTrip", "Departments", new { area = "" }, htmlAttributes: new { @class = "nav-link dropdown-item" })
+                            @Html.ActionLink("विद्यार्थी आरोग्य", "StudentHelth", "Departments", new { area = "" }, htmlAttributes: new { @class = "nav-link dropdown-item" })
+                        </div>
+                    </li>*@
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">सुविधा</a>
+                        <div class="dropdown-menu dropdown-custom" aria-labelledby="navbarDropdown">
+                            @Html.ActionLink("ग्रंथालय", "Library", "Facilities", new { area = "" }, htmlAttributes: new { @class = "nav-link dropdown-item" })
+                            @Html.ActionLink("प्रयोगशाळा", "Laboratory", "Facilities", new { area = "" }, htmlAttributes: new { @class = "nav-link dropdown-item" })
+                            @Html.ActionLink("खेळाचे मैदान", "PlayGround", "Facilities", new { area = "" }, htmlAttributes: new { @class = "nav-link dropdown-item" })
+                            @Html.ActionLink("डिजीटल क्लासरूम", "DigitalClassroom", "Facilities", new { area = "" }, htmlAttributes: new { @class = "nav-link dropdown-item" })
+                            @Html.ActionLink("शालेय पोषण आहार", "ShaleyPoshanAahar", "Facilities", new { area = "" }, htmlAttributes: new { @class = "nav-link dropdown-item" })
+                        </div>
+                    </li>
+                    <li class="nav-item active">
+                        @Html.ActionLink("उपक्रम", "Events", "Home", new { area = "" }, htmlAttributes: new { @class = "nav-link" })
+                    </li>
+                    @*<li class="nav-item active">
+
+                        @Html.ActionLink("यशस्वी विद्यार्थी", "SuccessStories", "Home", new { area = "" }, htmlAttributes: new { @class = "nav-link" })
+
+                    </li>*@
+                    <li class="nav-item active">
+                        @Html.ActionLink("चित्रे", "Gallery", "Home", new { area = "" }, htmlAttributes: new { @class = "nav-link" })
+                    </li>
+                    <li class="nav-item active">
+                        @Html.ActionLink("संपर्क", "Contact", "Home", new { area = "" }, htmlAttributes: new { @class = "nav-link" })
+                    </li>
+                </ul>
+
+            </div>
+        </nav>
+    </div>
+</div>
+<!-- menu end -->

@@ -1,0 +1,64 @@
+﻿@{
+    ViewBag.Title = "परीक्षा विभाग";
+    Layout = "~/Views/Shared/_LayoutWebsite.cshtml";
+}
+<div class="full-widht-bread">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <nav aria-label="breadcrumb-sm">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">@Html.ActionLink("मुखपृष्ठ", "Index", "Home")</li>
+                        <li class="breadcrumb-item active" aria-current="page">विभाग</li>
+                        <li class="breadcrumb-item active" aria-current="page">@ViewBag.Title</li>
+
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="full-widht-pagedata">
+    <div class="container container-bg padding-bottom-15 padding-top-15">
+        <div class="row">
+
+            <div class="col-lg-8 col-xm-12 col-md-8 col-sm-12 card p-0">
+                <div class="card-header font-weight-bold">
+                    शालेय परीक्षा
+                </div>
+                <img src="~/img/img_library700x380.png" class="title-image" />
+
+                <div class="col title-para">&nbsp; <br /> <strong></strong> </div>
+                <div class="col">
+                    <p class="text-justify">
+                        <strong>११ वी साठी</strong> प्रत्येक विषयाची परीक्षा २०० गुणाची असते
+                        <ol>
+                            <li>अ) चाचणी व ट्यूटोरियल ५०</li>
+                            <li>ब) सहामाही परीक्षा ५०</li>
+                            <li>क) वार्षिक परीक्षा ८०+२० (तोंडी परीक्षा) व ७०+३० (प्रात्यक्षिक)</li>
+                        </ol>
+                        
+                        
+                        
+                        पास होण्यासाठी प्रत्येक पेपर मध्ये ३५ गुण मिळणे आवश्यक आहे. वेळापत्रकाप्रमाणे होणारे तास, चाचणी परीक्षा, 
+                        सहामाही परीक्षा, वार्षिक परीक्षा व ट्यूटोरियल्स ना हजर असले पाहिजे अनुपस्थिती असल्यास कडक कारवाई केली जाईल 
+                        व त्याबाबत नंतर तक्रार चालणार नाही. वर्षाअखेरीस होणार्‍या शारीरिक शिक्षणाचा परीक्षेस उपस्थित असणे आवश्यक आहे.
+                        सर्व विषयाचे अहवाल पर्यावरण अहवाल, प्रात्यक्षिक वही तसेच तोंडी परीक्षा अनिवार्य राहील.
+                        <br />
+                        <strong>१२ वी साठी  </strong>वर्षभर नियमाप्रमाणे होणार्‍या ट्यूटोरियल्स, चाचण्या, सहामाही परीक्षा, पूर्वपरीक्षा व सराव परीक्षांना उपस्थित राहणे अत्यावश्यक आहे तसेच प्रात्यक्षिक असणार्‍या विषयाचे जर्नल (journal) पूर्ण केले व ८०% उपस्थिती असेल तरच बोर्डाचा परीक्षेस फॉर्म भरला जातो.
+
+                    </p>
+                </div>
+                
+            </div>
+            <div class="col-lg-4 col-xm-12 col-md-4 col-sm-12">
+                @Html.Partial("_nofitications")
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+

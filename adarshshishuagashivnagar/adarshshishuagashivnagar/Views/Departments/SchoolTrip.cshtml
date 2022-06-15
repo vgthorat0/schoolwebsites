@@ -1,0 +1,70 @@
+﻿@{
+    ViewBag.Title = "शैक्षणिक सहल";
+    Layout = "~/Views/Shared/_LayoutWebsite.cshtml";
+}
+<div class="full-widht-bread">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <nav aria-label="breadcrumb-sm">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">@Html.ActionLink("मुखपृष्ठ", "Index", "Home")</li>
+                        <li class="breadcrumb-item active" aria-current="page">विभाग</li>
+                        <li class="breadcrumb-item active" aria-current="page">@ViewBag.Title</li>
+
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="full-widht-pagedata">
+    <div class="container container-bg padding-bottom-15 padding-top-15">
+        <div class="row">
+
+            <div class="col-lg-8 col-xm-12 col-md-8 col-sm-12 card p-0">
+                <div class="card-header font-weight-bold">
+                    शैक्षणिक सहल विभाग
+                </div>
+                <img src="~/img/img_library700x380.png" class="title-image" />
+
+                <div class="col title-para">&nbsp; <br /> <strong></strong> </div>
+                <div class="col">
+                    <p class="text-justify">
+                        <strong>क्षेत्र भेटी</strong>
+                    </p>
+                    <p class="text-justify">
+                        विद्यार्थी शिक्षणाच्या प्रवाहात असताना फक्त पुस्तकी ज्ञान घेवून भागत नाही तर त्याला प्रत्यक्ष अनुभवाचीही जोड असावी. या हेतूने आम्ही क्षेत्रभेटी करत असतो.
+                        आजपर्यंत केलेल्या क्षेत्रभेटी.
+                        कुंभारवडा, गुर्‍हाळघर,  पोस्ट ऑफिस, पतसंस्था, डोंगर, पिठाची चक्की, किराणा दुकान, विटभट्टी, शेती, पापड उद्योग, इलेक्ट्रिक दुकान,  दूधडेअरी इ.
+                    </p>
+                    <p class="text-justify">
+                        <strong>कल्पना चावला विज्ञान केंद्र भेट</strong>
+                    </p>
+
+                    <p class="text-justify">
+                        मुलांना प्रत्यक्ष अनुभव येण्यासाठी आम्ही क्षेत्राभेटी करत असतो यावर्षी मुलांचा वैज्ञानिल दूरष्टिकोण वाढावा तसेच मांनोरंजांनातून त्यांना ग्रह तारे यांचा अनुभव यावा व साहित्य
+                        दिल्यावर त्यातून शैक्षणिक साहित्य बनवून स्वनिर्मितीचा आनंद घेता यावा वेगवेगळ्या वैज्ञानिकांची ओळख व्हावी या दृष्टीने आम्ही कल्पना चावला विज्ञान केंद्रास भेट दिली.
+                    </p>
+
+                    <p class="text-justify">
+                        <strong>द्वितीय सत्रातील एकदिवशीय सहल - </strong>आगशिवनागर - बाहुबली - जहाज मंडी - कान्हेरीमठ - कागल या ठिकाणी नेण्यात आली. सकाळी ७वा ट्रॅव्हेल्स १२० विद्यार्थी व १० शिक्षक आगाशीवनगरहून निघाले बाहुबली येथील आकर्षक कोरीवकाम वर्धमान महावीरांची मूर्ती इ पाहून जहाज मंदिरात गेले ते मंदिर जहाजाच्या आकाराचे होते. तेथील कलाकृती आकर्षक होत्या नंतर एका बागेमध्ये बसून भोजन करण्यात आले भोजनांनातर कान्हेरीमठ या ठिकाणी गेलो,
+                        तेथील शिल्पाकृती, बारा बलुतेदार अलुतेदार, राशींचे नमुने इ कलाकृती फारच सुंदर वाटत होत्या,
+                        त्यानंतर कागल येथील मुश्रीफ बागेत विद्यार्थांनी मनसोक्त खेळाचा आस्वाद घेतला व येताना विद्यार्थ्यांना नाश्ता व भोजनाची मेजवानी देण्यात आली अशा गोड अनुभवसाहित आगासीवनागरमध्ये पोहचलो.
+
+                    </p>
+
+
+                </div>
+            </div>
+            <div class="col-lg-4 col-xm-12 col-md-4 col-sm-12">
+                @Html.Partial("_nofitications")
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+

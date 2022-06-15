@@ -1,0 +1,54 @@
+﻿@{
+    ViewBag.Title = "परीक्षा विभाग";
+    Layout = "~/Views/Shared/_LayoutWebsite.cshtml";
+}
+<div class="full-widht-bread">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <nav aria-label="breadcrumb-sm">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">@Html.ActionLink("मुखपृष्ठ", "Index", "Home")</li>
+                        <li class="breadcrumb-item active" aria-current="page">विभाग</li>
+                        <li class="breadcrumb-item active" aria-current="page">@ViewBag.Title</li>
+
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="full-widht-pagedata">
+    <div class="container container-bg padding-bottom-15 padding-top-15">
+        <div class="row">
+
+            <div class="col-lg-8 col-xm-12 col-md-8 col-sm-12 card p-0">
+                <div class="card-header font-weight-bold">
+                    शालेय परीक्षा
+                </div>
+                <img src="~/img/img_library700x380.png" class="title-image" />
+
+                <div class="col title-para">&nbsp; <br /> <strong></strong> </div>
+                <div class="col">
+                    <p class="text-justify">
+                        घटक चाचणी क्र.१
+                        <br />घटक चाचणी क्र.२ 
+                        <br />सत्र क्र.१ 
+                        <br />घटक चाचणी क्र.३ 
+                        <br />घटक चाचणी क्र.४ 
+                        <br />सत्र क्र २
+                    </p>
+                </div>
+                
+            </div>
+            <div class="col-lg-4 col-xm-12 col-md-4 col-sm-12">
+                @Html.Partial("_nofitications")
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+

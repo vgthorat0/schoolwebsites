@@ -1,0 +1,54 @@
+﻿
+@{
+    ViewBag.Title = "जमना सहकारी ग्राहक संस्था मर्यादित,मलकापूर";
+    Layout = "~/Views/Shared/_LayoutWebsite.cshtml";
+}
+
+
+<div class="full-widht-bread">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <nav aria-label="breadcrumb-sm">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item"><a href="#">मुखपृष्ठ</a></li>
+                        <li class="breadcrumb-item">@Html.ActionLink("सहयोगी संस्था", "AssociateOrganization", "Home")</li>
+                        <li class="breadcrumb-item active" aria-current="page">@ViewBag.Title</li>
+
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="full-widht-pagedata">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <div class="card mb-3">
+                    <h5 class="card-header">@ViewBag.Title</h5>
+                    <img class="card-img-top" src="~/img/titleImg.png" alt="@ViewBag.Title" title="@ViewBag.Title">
+                    <div class="card-body">
+                        <h5 class="card-title">
+                            @ViewBag.Title (श्री. लक्ष्मीदेवी शेतकरी मंडळ, मलकापूर सातारा जिल्हा मध्यवर्ती बँक लि; व नाबार्ड योजना पुरस्कृत)
+                        </h5>
+                        <p class="card-text">
+                            <span class="font-weight-bold">स्थापना दि.</span>
+                            <span>०१/११/१९९०</span>
+                        </p>
+                        <p class="card-text">
+                            <span class="font-weight-bold">रजि.न.</span>
+                            <span>एस.टी / के.आर.डी/सि.ओ.एन. / ७०१/९० </span>
+                        </p>
+
+                        <p class="card-text text-justify">
+                            संस्थेच कार्यक्षेत्र मलकापूर व तिचे ५ कि.मी परिसरातील असून संस्थेची स्थापना नागरिकांनी जीवनावश्यक वस्तू सरकारमान्य रास्त भावात उपलब्ध करून देण्याच्या उदेशाने झाली आहे. संस्थेची स्वतंत्र अशी स्वामालकीची इमारत आहे. संस्थेच्या विकाससाठी संचालक मंडळ सतत कार्यरत असून संस्थेस ऑडिट वर्ग अ मिळाला आहे.संस्थेने चालू वर्षी शेतकर्‍याकडील शाळू विक्री चालू केली आहे. संस्थेकडे सध्या भागभांडवल रुपये २३६८०/- इतके असून संस्थेची गुंतवणूक रुपये १५६३१७/- इतकी आहे. सभासद संख्या ११६९आहे. संस्थेस या वर्षी एकूण नफा रुपये २४३१०७/- इतका झाला आहे.राखीव व इतर निधी ३६४७००/- व ईमारत २६५३२० इतका आहे.
+                        </p>
+                        @*<p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>*@
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "Gallery";
+    Layout = "~/Views/Shared/_LayoutWebsite.cshtml";
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css" />
+<div class="full-widht-bread">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <nav aria-label="breadcrumb-sm">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">@Html.ActionLink("Home", "Index", "Home")</li>
+                        <li class="breadcrumb-item active" aria-current="page">@ViewBag.Title</li>
+
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="full-widht-pagedata">
+    <div class="container container-bg padding-top-15 padding-bottom-15">
+        <div class="row">
+            @foreach (var item in ViewBag.Events)
+            {
+                <div class="col-md-4 col-sm-12 col-xm-12 animated slideInUp">
+                    <div class="thumbnail">
+                        <a href="~/uploads/events/@item.Image" data-toggle="lightbox" data-title="@item.Title" data-description="@item.Description" data-gallery="mixedgallery">
+                            <img src="~/uploads/events/_thumbnail_@item.Image">
+                        </a>
+                        <div class="caption">
+                            <div class="image-tile">@item.Title</div>
+                            <div class="image-desc">@item.Description</div>
+                        </div>
+                    </div>
+                </div>
+            }
+
+        </div>
+
+    </div>
+
+</div>
+
+<div class="container">
+    <div class="row">
+        &nbsp;
+    </div>
+</div>
+<script>
+    function onload() {
+        $('[data-toggle="lightbox"]').on("click", function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+    }
+</script>

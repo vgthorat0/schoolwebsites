@@ -1,0 +1,58 @@
+﻿@{
+    ViewBag.Title = "परीक्षा विभाग";
+    Layout = "~/Views/Shared/_LayoutWebsite.cshtml";
+}
+<div class="full-widht-bread">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <nav aria-label="breadcrumb-sm">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">@Html.ActionLink("मुखपृष्ठ", "Index", "Home")</li>
+                        <li class="breadcrumb-item active" aria-current="page">विभाग</li>
+                        <li class="breadcrumb-item active" aria-current="page">@ViewBag.Title</li>
+
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="full-widht-pagedata">
+    <div class="container container-bg padding-bottom-15 padding-top-15">
+        <div class="row">
+
+            <div class="col-lg-8 col-xm-12 col-md-8 col-sm-12 card p-0">
+                <div class="card-header font-weight-bold">
+                    शालेय परीक्षा
+                </div>
+                <img src="~/img/img_library700x380.png" class="title-image" />
+
+                <div class="col title-para">&nbsp; <br /> <strong></strong> </div>
+                <div class="col">
+                    <p class="text-justify">
+                        शालेय परीक्षा हा महत्वाचा विभाग आहे.
+                        विद्यार्थ्यांचे वर्षभरामध्ये मूल्यमापन कार्यासाठी वार्षिक अंदाजपत्रकानुसार घटक चाचणी, प्रथम सत्र परीक्षा, पायाभूत चाचणी, संकलित चाचणी परीक्षा,
+                        इ. १० वी. साठी तिमाही व पूर्व परीक्षांचे नियोजन केले जाते. सर्व परीक्षांचे अभिलेख तयार केले जातात. विद्यार्थ्यांच्या पालकांसाठी निकाल दिला जातो.
+                    </p>
+                </div>
+                <div class="col title-para">&nbsp; <br /> <strong>शासकीय व भाह्यपरीक्षा</strong> </div>
+                <div class="col">
+                    <p class="text-justify">
+                        वियलायमध्ये स्पर्धा परीक्षेची आवड निर्माण होण्यासाठी  गुणवत्ता धारक विद्यार्थी निर्माण होण्यासाठी इ. ५  वी, ८ वी शिष्यवृत्ती परीक्षा,
+                        इ ८ वी NMMS  (आर्थिक दृष्ट्या दुर्बल घटक शिष्यवृत्ती) जवाहर नवोदय प्रवेश परीक्षा, चित्रकला ग्रेड परीक्षा इ. 
+                        शासकीय व बाह्य परीक्षेसाठी विद्यार्थ्यांना प्रविष्ट केले जाते.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xm-12 col-md-4 col-sm-12">
+                @Html.Partial("_nofitications")
+            </div>
+        </div>
+
+    </div>
+</div>
+
+
+

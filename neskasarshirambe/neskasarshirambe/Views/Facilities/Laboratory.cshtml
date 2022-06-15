@@ -1,0 +1,46 @@
+﻿
+@{
+    ViewBag.Title = "प्रयोगशाळा";
+    Layout = "~/Views/Shared/_LayoutWebsite.cshtml";
+}
+<div class="full-widht-bread">
+    <div class="container">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <nav aria-label="breadcrumb-sm">
+                    <ol class="breadcrumb">
+                        <li class="breadcrumb-item">@Html.ActionLink("मुखपृष्ठ", "Index", "Home")</li>
+                        <li class="breadcrumb-item active" aria-current="page">सुविधा</li>
+                        <li class="breadcrumb-item active" aria-current="page">@ViewBag.Title</li>
+
+                    </ol>
+                </nav>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="full-widht-pagedata">
+    <div class="container container-bg padding-bottom-15 padding-top-15">
+        <div class="row">
+
+            <div class="col-lg-8 col-xm-12 col-md-8 col-sm-12">
+                <img src="~/img/img_library700x380.png" class="title-image" />
+
+                <div class="col title-para">&nbsp; <br /> <strong>प्रयोगशाळा</strong> </div>
+                <div class="col">
+                    <p class="text-justify">
+                        विद्यालयात स्वतंत्र प्रयोगशाळा असून ८ वी ते  १० वी विद्यार्थ्यांना अवशक असणारी सर्व उपकरणे रसायने वैज्ञानिक माहिती 
+                        व डिजिटल बोर्ड लावले आहेत. अत्यावश्यक सूचना फलक वर्ग वार वेळापत्रक आहे.
+                    </p>
+                </div>
+            </div>
+            <div class="col-lg-4 col-xm-12 col-md-4 col-sm-12">
+                @Html.Partial("_nofitications")
+            </div>
+        </div>
+
+    </div>
+</div>
+
+

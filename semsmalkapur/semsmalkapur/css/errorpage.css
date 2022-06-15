@@ -1,0 +1,33 @@
+﻿body {
+    padding: 0;
+    border: 0;
+    background: #0056a5;
+    min-width: 940px;
+    min-height: 550px;
+    margin: 0 auto !important;
+    height: 100%;
+    width: 100% !important;
+    overflow: hidden !important;
+    font-family: Arial;
+    color: rgb(100, 140, 255);
+}
+
+.error-text {
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.error-code {
+    text-align: center;
+    font-size: 190px;
+}
+
+.error-home-link {
+    font-size: 20px;
+    text-align: center;
+}
+
+    .error-home-link a, .home-link {
+        color: rgb(166, 170, 216);
+    }

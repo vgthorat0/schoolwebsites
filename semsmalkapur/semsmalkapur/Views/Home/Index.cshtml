@@ -1,0 +1,83 @@
+﻿@{
+    ViewBag.Title = "Home";
+    Layout = "~/Views/Shared/_LayoutWebsite.cshtml";
+}
+
+@Html.Partial("_LayoutWebsite\\_slider")
+<!--BODY START-->
+<div class="container-bg">
+    <div class="container container-bg padding-bottom-15 padding-top-15">
+        <div class="row">
+            <div class="col-12 col-md-8">
+                <div class="info-title">
+                    About School
+                </div>
+                <p class="text-justify">
+
+                    <strong>“Education is the powerful weapon which we can use to change the future”</strong>
+                    Our motto “Learn achieve & inspire” epitomize the spirit of our school.
+                    We try to encourage our children to unleash their fullest potential,  we also believe that every child is unique in nature with varying needs therefor by fostering a conductive environment full of love care & creativity we install in our children a desire to learn with emphasis on their social emotional, physical & intellectual development aspects.
+
+                </p>
+                <a href="/about/objective" class="btn btn-danger">Read more</a>
+            </div>
+            <div class="col-12 col-md-4">
+                <div class="info-img">
+                    <img src="\img\capw300x260h.PNG">
+                </div>
+            </div>
+            <p class="text-justify">
+                Our school building is spacious along with playground. It has multistoryed building with 20 lecture halls, Laboratory (Physics, Chemistry, Maths, Biology, Geography etc.) Even canteen facility is available, consumer store, drinking water facility, ramp for handicapped, total campus has CCTV Servillence. Building has good infrastructure.
+            </p>
+        </div>
+    </div>
+
+
+
+    <div class="full-widht sec-bg">
+        <div class="container full-widht padding-10">
+            <div class="row">
+                <div class="col-12 col-md-12 sec-bg">
+
+                    <div class="sec-bg">  <img src="~/img/Ashokrao_Kisan_Thorat.png" />               </div>
+                    <div class="sec-title">
+                        Secretary, Malaidevi Shikashan Sanstha
+
+                    </div>
+                    <div class="sec-name">   Hon. Shri. Ashokrao Thorat            </div>
+                    <p class="text-justify">
+
+                        @*<strong>श्री मळाईदेवीच्या कृपेने,</strong> <br />*@
+                        <br />
+                        &nbsp;&nbsp;&nbsp;&nbsp; Star English Medium School & Jr. College is opened with this ideology to nourish and nurture the potential of individuals to the extent of perfection. Here we Endeavours to spread the light of education all around. We lay focus on all round development of a child where he will be physically strong and mentally healthy. Instead of making him contended with what he has learnt, we intensify their desire to learn more & more. Express my hear full gratitude to those who are a part of this institution. I congratulate the editorial team, staff for bringing out this information booklet. I welcome all the parents and students to be part of Star English medium school.
+                    </p>
+                    <p class="" style="text-align:right">
+                        Thank you!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                        <br />
+                        Mr. Ashokrao Kisan Thorat&nbsp;&nbsp;&nbsp;
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div> <!-- sec-bg end -->
+
+    <div class="full-widht">
+        <div class="container full-widht">
+            <div class="row">
+                <div class="col-12 col-md-12 ">
+                    @Html.Partial("_nofitications")
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+    function onload() {
+        $('[data-toggle="lightbox"]').on("click", function (event) {
+            event.preventDefault();
+            $(this).ekkoLightbox();
+        });
+
+       // $('#feedbackCarousel').bsTouchSlider();
+    }
+    </script>

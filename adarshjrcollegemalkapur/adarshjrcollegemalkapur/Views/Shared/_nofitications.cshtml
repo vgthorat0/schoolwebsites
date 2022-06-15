@@ -1,0 +1,17 @@
+﻿<div class="news-container">
+    <div class="notification-title">
+        पुढील कार्यक्रम आणि सूचना
+    </div>
+    <div>
+        <ul id="ticker01">
+            @foreach (var item in ViewBag.Notifications)
+            {
+                <li>
+                    <a href="@item.Link#" target="_blank"> @item.DisplayText <img src="~/img/newicon.gif" /></a>
+                    @*<a href="@item.Link#" data-title="@item.DisplayText" data-width="1200" data-toggle="lightbox" data-gallery="remoteload">@item.DisplayText</a>*@
+                </li>
+
+            }
+        </ul>
+    </div>
+</div>
